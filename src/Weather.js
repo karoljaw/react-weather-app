@@ -5,7 +5,7 @@ class Weather extends Component {
         return (
             <div>
                 {
-                    this.props.city && this.props.country && <p className='weather__key'>Location: <span className='weather__value'> {this.props.city && this.props.country}</span></p>
+                    this.props.city && this.props.country && <p className='weather__key'>Location: <span className='weather__value'> {this.props.city}, {this.props.country}</span></p>
                 }
                 {
                     this.props.temperature && <p className='weather__key'>Temperature: <span className='weather__value'> {this.props.temperature}</span></p>
